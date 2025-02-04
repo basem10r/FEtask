@@ -1,0 +1,55 @@
+{
+  "title": "Registration",
+  "step": "Step {{current}} of {{total}}",
+  "personalInfo": {
+    "title": "Personal Info",
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "Enter first name..."
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Enter last name..."
+    },
+    "gender": {
+      "label": "Gender",
+      "placeholder": "Select gender...",
+      "options": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      }
+    },
+    "country": {
+      "label": "Your Residence Country",
+      "placeholder": "Select residence country..."
+    }
+  },
+  "contactDetails": {
+    "title": "Contact Details",
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter email address..."
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "Enter phone number..."
+    }
+  },
+  "terms": {
+    "text": "I agree to the",
+    "links": {
+      "terms": "terms and conditions",
+      "privacy": "privacy policy"
+    }
+  },
+  "otpVerification": {
+    "title": "OTP Verification",
+    "subtitle": "Please check your email.",
+    "message": "We've sent a code to {{email}}",
+    "resend": {
+      "text": "Didn't get a code?",
+      "link": "Click to resend"
+    }
+  }
+} 
