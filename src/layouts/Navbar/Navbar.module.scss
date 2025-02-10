@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-navbar;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-base;
+    max-width: $max-width-container;
+    margin: 0 auto;
+    height: $navbar-height-mobile;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: $spacing-base $spacing-lg;
+      height: $navbar-height-desktop;
+    }
+  }
+
+  &__logo {
+    height: 50px;
+    width: auto;
+
+    @media (min-width: 64em) {
+      height: 78px;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.25rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1001;
+
+    @media (min-width: 64em) {
+      display: none;
+    }
+  }
+
+  &__toggle_line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+      transition: transform 0.3s ease;
+    }
+
+    &::before {
+      transform: translateY(-8px);
+    }
+
+    &::after {
+      transform: translateY(8px);
+    }
+
+    &--open {
+      background-color: transparent;
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__content {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (min-width: 64em) {
+      position: static;
+      transform: none;
+      padding: 0;
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+      overflow: visible;
+    }
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+}

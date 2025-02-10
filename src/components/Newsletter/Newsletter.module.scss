@@ -1,0 +1,110 @@
+.newsletter {
+  background-color: $color-white;
+  padding: 20px 0;
+
+  &__container {
+    max-width: $max-width-container;
+    margin: 0 auto;
+    padding: 0 $spacing-base;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 0 $spacing-lg;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+      align-items: center;
+      gap: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: $font-weight-medium;
+    margin: 0;
+    color: $color-black;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+    @media (min-width: $breakpoint-lg) {
+      margin: 0;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    color: $color-text;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-weight: $font-weight-bold;
+    max-width: 369px;
+    text-align: center;
+
+    @media (min-width: $breakpoint-lg) {
+      margin: 0;
+      text-align: start;
+    }
+  }
+
+  &__form {
+    max-width: 530px;
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  &__input {
+    padding: 0 150px 0 20px;
+    height: 50px;
+    border: 1.5px solid $color-gray-100;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+    background-color: $color-white;
+    color: $color-black;
+    flex: 1;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 0 250px 0 20px;
+      height: 72px;
+    }
+
+    &::placeholder {
+      color: $color-gray;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 15px);
+
+    @media (min-width: $breakpoint-lg) {
+      right: 20px;
+      top: calc(50% - 23px);
+    }
+  }
+}

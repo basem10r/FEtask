@@ -3,6 +3,14 @@
     "en": "English",
     "ar": "العربية"
   },
+  "navigation": {
+    "rooms": "Rooms & Suites",
+    "rewards": "Wynn Rewards",
+    "offers": "Offers",
+    "dining": "Dining",
+    "entertainment": "Entertainment",
+    "meetings": "Meetings & Events"
+  },
   "buttons": {
     "next": "Next",
     "back": "Back",
@@ -12,5 +20,70 @@
     "required": "This field is required",
     "email": "Please enter a valid email",
     "phone": "Please enter a valid phone number"
+  },
+  "footer": {
+    "description": "Wynn Resorts is a luxury hospitality company that sets the highest standards worldwide for service, quality, and style.",
+    "about": "About",
+    "legal": "Legal",
+    "connect": "Connect",
+    "links": {
+      "about": "About Us",
+      "careers": "Careers",
+      "press": "Press Room",
+      "contact": "Contact",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "accessibility": "Accessibility",
+      "responsible": "Responsible Gaming",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "apps": {
+        "shop": "Shop Home Collection",
+        "giftCards": "Gift Cards",
+        "wynnStories": "Wynn Stories",
+        "slotsApp": "Wynn Slots App",
+        "mobileApp": "Mobile App",
+        "responsibleGaming": "Responsible Gaming"
+      },
+      "company": {
+        "about": "About Us",
+        "careers": "Careers",
+        "investor": "Investor Relations",
+        "privacy": "Privacy Notice",
+        "cookie": "Cookie Notice",
+        "terms": "Terms of Use",
+        "directory": "Hotel Information & Directory"
+      },
+      "locations": {
+        "palace": "Wynn Palace Cotai",
+        "boston": "Encore Boston Harbor",
+        "macau": "Wynn Macau"
+      }
+    },
+    "address": {
+      "title": "Wynn and Encore Las Vegas",
+      "street": "3131 Las Vegas Blvd. Las Vegas, NV 89109",
+      "phone": "+1 (702) 770-7000"
+    },
+    "social": {
+      "title": "Connect with us:",
+      "facebook": "Follow us on Facebook",
+      "twitter": "Follow us on Twitter",
+      "youtube": "Subscribe to our YouTube channel",
+      "instagram": "Follow us on Instagram",
+      "x": "Follow us on X"
+    },
+    "privacy": {
+      "doNotSell": "Do Not Sell Or Share My Data"
+    },
+    "copyright": "© {{year}} Wynn Resorts Holdings, LLC. All rights reserved."
+  },
+  "newsletter": {
+    "title": "Get News & Updates",
+    "description": "Get latest developments and exciting news on how we are shaping the future!",
+    "placeholder": "Your email address",
+    "button": "JOIN THE NEWSLETTER"
   }
-} 
+}

@@ -1,0 +1,43 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+
+  @media (min-width: $breakpoint-lg) {
+    flex-direction: row;
+    gap: 41px;
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (min-width: $breakpoint-lg) {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-wide;
+    text-transform: uppercase;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    [dir='rtl'] & {
+      font-family: $font-family-arabic;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      font-size: $font-size-sm;
+    }
+  }
+}
